@@ -1,0 +1,17 @@
+<div>
+    <h2>My Task Today</h2>
+</div> 
+<div>
+    <ul>
+        <li *ngFor="let item of items">
+         <span *ngIf="item !== 5">{{ item }}</span> <button (click)="DelItems()">Del</button>
+         <b *ngIf="item === 5">{{ item }}</b>
+        </li>
+        </ul>
+
+</div>
+<div>
+     Task: <input [(ngModel)]="title" />
+    <button (click)="AddItems()">Add</button>
+ </div>
+
