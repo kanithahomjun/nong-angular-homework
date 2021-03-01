@@ -1,0 +1,16 @@
+<p id="rcorners2">
+<app-mytask
+*ngFor="let p of products"
+[product]="p" 
+(OnSelected)="selectedProduct($event)"
+></app-mytask>
+</p>
+
+<div> <h2>Add Task</h2>
+<p id="rcorners2">
+    Name: <input [(ngModel)]="title">
+    Description: <input [(ngModel)]="title">
+    <button (click)="AddItems()">Add</button>
+    </p>
+</div>
+
