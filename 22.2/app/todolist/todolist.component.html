@@ -1,0 +1,28 @@
+<p id="rcorners1">
+<app-mytask
+*ngFor="let p of products"
+[product]="p" 
+(OnSelected)="selectedProduct($event)" 
+></app-mytask>
+
+    <span>  Task: {{ msgName }}  </span><br>
+    
+    <span>Description: {{ msgDescription }} </span>
+</p>
+
+<!--div> <h2>Task: {{ msgName }}  </h2>
+<p id="rcorners2">
+    Description: {{ msgDescription }} 
+</div-->
+
+
+
+<div> <h2>Add Task</h2>
+<p id="rcorners2">
+    Name: <input [(ngModel)]="title">
+    Description: <input [(ngModel)]="title">
+    <button (click)="AddItems()">Add</button>
+    </p>
+</div>
+
+
