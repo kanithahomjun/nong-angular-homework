@@ -1,0 +1,316 @@
+<div class="container navbar-left">
+    <div class="nut-navbar-1">
+        <div class="row nut-div-row-1">
+            <div class="col-3 div-col-3-nut" [routerLink]="['/dashboard']" style="cursor: pointer;">
+                <picture class="border-primary shadow pic-logo">
+                    <img src="assets/img/logo.png" class="pic-margin" />
+                </picture>
+
+            </div>
+            <div class="col offset-xl-0 d-xl-flex justify-content-xl-end align-items-xl-center">
+                <div role="group" class="btn-group">
+                    <a class="btn disabled text-white-50" role="button" target="_top"></a>
+                    <a class="btn text-light" role="button">Logout</a>
+                    <a class="btn text-light" role="button">
+                        <i class="fa fa-cogs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 text-truncate d-xl-flex justify-content-xl-center n-color">
+                <div style="margin-left: 30px;">
+                    <div class="row">
+                        <div class="col"><input style="background-color:#e0e0e0;" type="search" class="border rounded border-light d-xl-flex search-nut" placeholder="ค้นหา" /></div>
+                    </div>
+                    <ul class="nav nav-pills nav-sidebar flex-column nav-legacy" data-widget="treeview" role="menu" style="margin-top: 1rem;">
+                        <li class="nav-item">
+                            <a [routerLink]="['/dashboard']" class="nav-link active">
+                                <i class="nav-icon fas fa-desktop"> &nbsp;&nbsp;Dashboard </i>
+
+                            </a>
+                        </li>
+                    </ul>
+
+                    <mat-accordion>
+                        <mat-expansion-panel class="trs">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <a><i class="fa fa-book"></i>  Catalog</a>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <a class="btn active btn-block text-left" [routerLink]="['/products']">
+                                <i class="fa fa-dot-circle-o"></i>  Products
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Categories
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Manufacturers
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Product reviews
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Product tags
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Attributes
+                            </a>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+
+                    <mat-accordion>
+                        <mat-expansion-panel class="trs">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <a><i class="fa fa-shopping-cart"></i>  Sales</a>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Orders
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Shipments
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Return requests
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Recurring payments
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Gift cards
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Shopping carts and <br> wishlists
+                            </a>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+
+                    <mat-accordion>
+                        <mat-expansion-panel class="trs">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <a><i class="fa fa-user"></i>  Customers</a>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Customers
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Customers roles
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Online customers
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Vendors
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Activity lof
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Activity Types
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  GDPR requests (log)
+                            </a>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+
+                    <mat-accordion>
+                        <mat-expansion-panel class="trs">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <a><i class="fa fa-tags"></i>  Promotions</a>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Discounts
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Affiliates
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Newsletter subscribers
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Campaigns
+                            </a>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+
+                    <mat-accordion>
+                        <mat-expansion-panel class="trs">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <a><i class="fa fa-cubes"></i>  Content management</a>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Topics (pages)
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Message templates
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  News items
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  News comments
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Blog posts
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Blog comments
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Polls
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Forums
+                            </a>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+
+                    <mat-accordion>
+                        <mat-expansion-panel class="trs">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <a><i class="fa fa-cogs"></i>  Configuration</a>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Settings
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Email accounts
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Stores
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Countries
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Languages
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Currencies
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Payment methods
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Payment restrictions
+                            </a>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+
+                    <mat-accordion>
+                        <mat-expansion-panel class="trs">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <a><i class="fa fa-cube"></i>  System</a>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  System information
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Log
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Warnings
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Maintenance
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Message queue
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Schedule tasks
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Search engine friendly <br> page nemes
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Templates
+                            </a>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+
+                    <mat-accordion>
+                        <mat-expansion-panel class="trs">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <a><i class="fa fa-line-chart"></i>  Reports</a>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Sales summary
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Low stock
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Bestsellers
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Products never <br> purchased
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Country sales
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Customer Reports
+                            </a>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+
+                    <mat-accordion>
+                        <mat-expansion-panel class="trs">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <a><i class="fa fa-question-circle"></i>  Help</a>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Sales summary
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Low stock
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Bestsellers
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Products never <br> purchased
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Country sales
+                            </a>
+                            <a class="btn active btn-block text-left">
+                                <i class="fa fa-dot-circle-o"></i>  Customer Reports
+                            </a>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+
+                </div>
+            </div>
+
+            <div class="col" id="dashboard" style="background: #e0e0e0;padding-top: 15px;">
+
+                <router-outlet></router-outlet>
+
+                <footer class="d-xl-flex" style="background: #e0e0e0;margin-top: 70px;margin-left: -12px;height: 60px;border-top: 1px solid #e0e0e0;">
+                    <p style="margin-top: 15px;margin-left: 200px;color: var(--gray);">Thursday, May 06, 2021 8:00 AM<br /></p>
+                    <p style="margin-top: 15px;margin-left: 200px;color: var(--gray);"><strong>nopCommerce version4.40.3</strong><br /><br /></p>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>

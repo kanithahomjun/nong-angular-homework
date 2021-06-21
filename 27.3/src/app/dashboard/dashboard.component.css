@@ -1,0 +1,52 @@
+.nut-das {
+    border-right: 1px solid #c8cacc;
+    border-left: 1px solid #c8cacc;
+}
+
+.th-n {
+    border-right: 1px solid #c8cacc
+}
+
+.td-n {
+    padding-top: 12px;
+    border-right: 1px solid #c8cacc;
+}
+
+.td-n-1 {
+    border-right: 1px solid #c8cacc;
+}
+
+.nut-div-mar {
+    background: #ffffff;
+    margin-right: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-top-style: solid;
+    border-top-color: var(--blue);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px var(--gray);
+}
+
+.col-7-nut {
+    background: #ffffff;
+    margin-right: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-top-style: solid;
+    border-top-color: var(--blue);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px var(--gray);
+    -width: 60%;
+    width: 588.700px;
+}
+
+.nut-mar-n {
+    background: #ffffff;
+    margin-right: 30px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-top-style: solid;
+    border-top-color: var(--blue);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px var(--gray);
+}
